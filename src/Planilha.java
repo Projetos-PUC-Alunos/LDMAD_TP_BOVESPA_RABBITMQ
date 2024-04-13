@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class Planilha {
 	
 		  public static ArrayList run() {
-			 ArrayList<String> cod = new ArrayList<String>();
+			ArrayList<String> cod = new ArrayList<String>();
 		    BufferedReader br = null;
 		    String linha = "";
 		    String csvDivisor = ";";
@@ -40,7 +40,7 @@ public class Planilha {
 			return null;
 		  }
 		  
-		  public static ArrayList lerLivroOferta() {
+		  public static ArrayList<String> lerLivroOferta() {
 				ArrayList<String> cod = new ArrayList<String>();
 			    BufferedReader br = null;
 			    String linha = "";

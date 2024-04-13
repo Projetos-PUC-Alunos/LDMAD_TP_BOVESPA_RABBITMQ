@@ -3,14 +3,13 @@ import com.rabbitmq.client.ConnectionFactory;
 
 public class RabbitMQConnection {
 
-    public static Connection getConnection() {
+    public Connection getConnection(String urlRabbitmq) {
         Connection conn = null;
         try {
             
             ConnectionFactory factory = new ConnectionFactory();
             
-            factory.setUri("amqps://zhqjjnph:EdkyKTi_W-8StS1kyqVOh0crCxhZLZmU@hawk.rmq.cloudamqp.com/zhqjjnph");
-            
+            factory.setUri(urlRabbitmq);
             conn = factory.newConnection();
         } catch (Exception e) {
             e.printStackTrace();
