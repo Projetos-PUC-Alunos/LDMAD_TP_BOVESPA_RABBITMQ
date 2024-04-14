@@ -1,20 +1,11 @@
 import java.io.IOException;
-import java.net.URISyntaxException;
-import java.security.KeyManagementException;
-import java.security.NoSuchAlgorithmException;
 import java.util.concurrent.TimeoutException;
-
-import com.rabbitmq.client.AMQP;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
-import com.rabbitmq.client.ConnectionFactory;
-import com.rabbitmq.client.Consumer;
-import com.rabbitmq.client.DefaultConsumer;
-import com.rabbitmq.client.Envelope;
 
 public class Corretora {
     private static final String broker = "BROKER";
-    private static final String bolsadevalores = "BOLSADEVALORES";
+    
     private Connection connection;
 
     public Corretora(Connection connection) {

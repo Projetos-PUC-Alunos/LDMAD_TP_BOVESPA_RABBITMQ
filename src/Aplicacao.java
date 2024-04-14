@@ -1,18 +1,11 @@
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
+import javax.swing.*;
 import java.util.ArrayList;
-
-import javax.swing.JOptionPane;
-import javax.swing.SwingUtilities;
-
 import com.rabbitmq.client.Connection;
-
 
 public class Aplicacao extends Planilha{
 	
-	  public static void main(String[] argv)  throws Exception {
+	public static void main(String[] argv)  throws Exception {
 		
 		// Obtém a escolha do usuário
 		boolean escolhaCompra = obterEscolhaDoUsuario();
